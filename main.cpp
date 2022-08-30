@@ -148,6 +148,11 @@ int main( int argc, char* args[] )
 						//Select surfaces based on key press
 						switch( e.key.keysym.sym )
 						{
+							// Q (Quit)
+							case SDLK_q:
+								quit = true;
+							break;
+							// ENTER
 							case SDLK_RETURN:
 							gCurrentSurface = gKeyPressSurfaces[ KEY_PRESS_SURFACE_ENTER ];
 							break;
